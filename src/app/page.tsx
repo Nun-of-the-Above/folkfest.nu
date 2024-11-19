@@ -5,11 +5,6 @@ export default function HomePage() {
   return (
     <Layout>
       <h1 className="text-center text-4xl font-bold text-gray-900 mb-8">Välkommen till Folkfest</h1>
-      <p className="text-lg text-gray-700 mb-6">
-        Vi gör er middag till en oförglömlig show! Med temakvällar från 80-tal till rock garanterar
-        vi en kväll fylld av musik, dans och underhållning.
-      </p>
-
       <div className="relative h-96 mb-12">
         {/* Placeholder för hero-bild */}
         <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
@@ -18,6 +13,18 @@ export default function HomePage() {
           </span>
         </div>
       </div>
+      <p className="text-lg text-gray-700 mb-6">
+        Just nu sätter vi upp en produktion på showkrogen Eztrad i Örebro, en show vi även medverkar
+        i själva. Dessförinnan har vi jobbat med underhållning på 2-entertain, moment group,
+        Wallmans Gruppen i Stockholm, ving, Astrid Lindgrens värld och flera andra ställen runt om i
+        landet. <br />
+        <br />
+        På jakt efter underhållning? Det fixar vi!
+      </p>
+      <p className="text-lg text-gray-700 mb-6">
+        Vi gör er middag till en oförglömlig show! Med temakvällar från 80-tal till rock garanterar
+        vi en kväll fylld av musik, dans och underhållning.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         <div className="bg-white p-6 rounded-lg shadow-md">
