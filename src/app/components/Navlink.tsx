@@ -14,7 +14,9 @@ export const NavLink = ({ href, label, onClick }: NavLinkProps) => {
   return (
     <Link
       href={href}
-      className={`${pathname === href ? 'text-blue-600' : 'text-gray-600'} hover:text-gray-900`}
+      className={`${
+        pathname === href ? 'text-blue-300' : 'text-gray-300'
+      } hover:text-white transition-colors duration-200`}
       onClick={onClick}
     >
       {label}

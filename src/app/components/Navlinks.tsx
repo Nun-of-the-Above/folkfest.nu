@@ -1,13 +1,29 @@
 import { NavLink } from '@/app/components/Navlink'
+import Link from 'next/link'
+import { FacebookIcon } from './icons/FacebookIcon'
+import { InstagramIcon } from './icons/InstagramIcon'
 
-export function Navlinks({ toggleMenu }: { toggleMenu?: () => void }) {
+export function Navlinks() {
   return (
-    <>
-      <NavLink href="/aktuellt" label="Aktuellt" onClick={toggleMenu} />
-      <NavLink href="/boka-oss" label="Boka oss" onClick={toggleMenu} />
-      <NavLink href="/galleri" label="Galleri" onClick={toggleMenu} />
-      <NavLink href="/om-oss" label="Om oss" onClick={toggleMenu} />
-      <NavLink href="/kontakt" label="Kontakt" onClick={toggleMenu} />
-    </>
+    <div className="flex gap-8">
+      <NavLink href="/underhallning" label="Underhållning" />
+      <NavLink href="/om-oss" label="Om oss" />
+      <NavLink href="/kontakt" label="Kontakt" />
+      {/* Social Media Icons */}
+      <Link
+        href="https://facebook.com/folkfest"
+        target="_blank"
+        className="text-gray-400 hover:text-white"
+      >
+        <FacebookIcon className="w-5 h-5" />
+      </Link>
+      <Link
+        href="https://instagram.com/folkfest"
+        target="_blank"
+        className="text-gray-400 hover:text-white"
+      >
+        <InstagramIcon className="w-5 h-5" />
+      </Link>
+    </div>
   )
 }
